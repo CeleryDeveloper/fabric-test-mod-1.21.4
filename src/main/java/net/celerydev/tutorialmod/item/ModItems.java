@@ -17,6 +17,8 @@ public class ModItems {
 
     //Helper method for registering items
     private static Item registerItem(String name, Item.Settings itemSettings){
+
+        //Copied code from u/aishiteruyovivi here: https://www.reddit.com/r/fabricmc/comments/1gdp5ad/nullpointerexception_driving_me_nuts/
         Identifier id = Identifier.of(TutorialMod.MOD_ID, name);
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
         Item.Settings settings = itemSettings.registryKey(key);
