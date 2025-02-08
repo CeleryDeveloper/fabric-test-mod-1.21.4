@@ -13,9 +13,9 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     //Helper method for registering blocks
-    private static Block registerBlock(String name, Block block, Item.Settings itemSettings){
-        registerBlockItem(name, block, itemSettings);
-    }
+//    private static Block registerBlock(String name, Block block, Item.Settings itemSettings){
+//        registerBlockItem(name, block, itemSettings);
+//    }
 
     //Helper method for registering block items
     private static void registerBlockItem(String name, Block block, BlockItem.Settings itemSettings){
