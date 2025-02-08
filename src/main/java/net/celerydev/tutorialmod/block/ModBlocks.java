@@ -17,7 +17,7 @@ public class ModBlocks {
 //        registerBlockItem(name, block, itemSettings);
 //    }
 
-    //Helper method for registering block items
+    ///Helper method for registering block items
     private static void registerBlockItem(String name, Block block, BlockItem.Settings itemSettings){
 
         //Combined code from ModItems.java and fabric docs: https://docs.fabricmc.net/develop/blocks/first-block
