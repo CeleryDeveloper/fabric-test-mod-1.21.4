@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "N/A",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/CeleryDeveloper/Fabric-Tutorial-1.21.4"
 	},
 	"license": "MIT",
 	"icon": "assets/tutorialmod/icon.png",
