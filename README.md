@@ -1,6 +1,6 @@
 This is a mod for Minecraft 1.21.4 that uses the Fabric mod loader.
 
-Use the code however you want, this is just for me to learn modding so I don't really care!
+Use the code/art however you want, this is just for me to learn modding so I don't really care!
 
 This is the tutorial I'm following: [https://www.youtube.com/@ModdingByKaupenjoe](https://www.youtube.com/watch?v=oU8-qV-ZtUY&list=PLKGarocXCE1H_HxOYihQMq0mlpqiUJj4L)
 
