@@ -12,8 +12,12 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
+    //Registers items
     public static Item Blood_Stone = registerItem("blood_stone", new Item.Settings());
     public static Item Blood_Stone_Gem = registerItem("blood_stone_gem", new Item.Settings());
+
+    public static Item Celery_Stick = registerItem("celery_stick", new Item.Settings());
+
 
     //Helper method for registering items
     private static Item registerItem(String name, Item.Settings itemSettings){
@@ -26,13 +30,22 @@ public class ModItems {
         return Registry.register(Registries.ITEM, key, new Item(settings));
     }
 
+
     //Runs on initialization
     public static void registerModItems() {
+        //Prints message to log
         TutorialMod.LOGGER.info("Registering 'Items' for" + TutorialMod.MOD_ID);
 
+        //Adds Items to the creative menu
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            //All following items are added to the 'Ingredients' group in the creative menu
             entries.add(Blood_Stone);
             entries.add(Blood_Stone_Gem);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            //All following items are added to the 'Food and Drink' group in the creative menu
+            entries.add(Celery_Stick);
         });
     }
 }
