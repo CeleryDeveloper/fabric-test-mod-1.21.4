@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tutorialmod:block/blood_stone_block"
+  }
+}
