@@ -16,22 +16,23 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final RegistryKey<Block> Blood_Stone_Block_Key = RegistryKey.of(
+    //Registers a block
+    private static final RegistryKey<Block> Blood_Stone_Block_Key = RegistryKey.of(
             RegistryKeys.BLOCK,
             Identifier.of(TutorialMod.MOD_ID, "blood_stone_block")
     );
-    private static final Block Blood_Stone_Block = registerBlock("blood_stone_block", Blood_Stone_Block_Key,
+    public static final Block Blood_Stone_Block = registerBlock("blood_stone_block", Blood_Stone_Block_Key,
             new Block(AbstractBlock.Settings.create().registryKey(Blood_Stone_Block_Key).strength(4f).requiresTool().sounds(BlockSoundGroup.BONE)));
 
 
     //Helper method for registering blocks
     private static Block registerBlock(String name, RegistryKey<Block> blockKey, Block block){
-        registerBlockItem(name, blockKey, block);
+        registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, blockKey, block);
     }
 
     //Helper method for registering block items
-    private static void registerBlockItem(String name, RegistryKey<Block> blockKey, Block block){
+    private static void registerBlockItem(String name, Block block){
 
         //Combined code from ModItems.java and fabric docs: https://docs.fabricmc.net/develop/blocks/first-block
         //If it isn't obvious I have absolutely no idea what I am doing!
@@ -44,7 +45,7 @@ public class ModBlocks {
 
     //Runs on initialization
     public static void registerModBlocks() {
-        TutorialMod.LOGGER.info("Registering 'Blocks' for" + TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.info("Registering 'Blocks' for " + TutorialMod.MOD_ID);
 
         //Adds Items to the creative menu
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {

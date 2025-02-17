@@ -1,6 +1,7 @@
 package net.celerydev.tutorialmod;
 
 import net.celerydev.tutorialmod.block.ModBlocks;
+import net.celerydev.tutorialmod.item.ModItemGroups;
 import net.celerydev.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}

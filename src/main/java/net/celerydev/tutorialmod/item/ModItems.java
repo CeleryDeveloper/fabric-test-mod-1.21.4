@@ -34,7 +34,7 @@ public class ModItems {
     //Runs on initialization
     public static void registerModItems() {
         //Prints message to log
-        TutorialMod.LOGGER.info("Registering 'Items' for" + TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.info("Registering 'Items' for " + TutorialMod.MOD_ID);
 
         //Adds Items to the creative menu
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {

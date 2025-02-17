@@ -1,6 +1,9 @@
 {
-  "block.tutorialmod.blood_stone_block": "Blood Stone Block",
   "item.tutorialmod.blood_stone": "Blood Stone",
   "item.tutorialmod.blood_stone_gem": "Blood Stone Gem",
-  "item.tutorialmod.celery_stick": "Celery Stick"
+  "item.tutorialmod.celery_stick": "Celery Stick",
+
+  "block.tutorialmod.blood_stone_block": "Blood Stone Block",
+
+  "itemgroup.tutorialmod.tutorial_mod_group": "Example Mod"
 }
